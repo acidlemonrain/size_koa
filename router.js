@@ -16,4 +16,9 @@ router.use(bodyParser())
      ctx.body = "<h1>Hello World, Koa folks!</h1>" + JSON.stringify(user);
  }) 
 
+ router.get('blog','/',async (ctx)=>{
+    const blog = await Blog.findAll()
+    ctx.body = blog
+ })
+
  module.exports.router=router
