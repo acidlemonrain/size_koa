@@ -12,3 +12,5 @@ app.use(router.routes()).use(router.allowedMethods());
 app.listen(3000)
 
 //verson exp
+//version expp white and black
+//koa  thsi is my blog 
